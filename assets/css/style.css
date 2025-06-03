@@ -1,147 +1,142 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: sans-serif;
-    font-weight: 600;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: 600;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-    width: 100%;
-    /* background-color: antiquewhite; */
+  width: 100%;
+  /* background-color: antiquewhite; */
 }
 
 nav {
-    /* background: #ccc; */
-    width: 100%;
-    height: 100px;
+  /* background: #ccc; */
+  width: 100%;
+  height: 100px;
 }
 
 nav .nav_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav .nav_container .logo_container {
-    background: linear-gradient(to right, rgb(224, 3, 3), rgb(2, 233, 13));
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 20px;
-    border-radius: 20PX 5PX;
-    animation: shape 2s infinite ease;
+  background: linear-gradient(to right, rgb(224, 3, 3), #00aaff);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 20px;
+  border-radius: 20px 5px;
+  animation: shape 2s infinite ease;
 }
 
 nav .nav_container .logo_container .logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #fff;
-    color: #fff;
-    animation: shape 2s infinite ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  color: #fff;
+  animation: shape 2s infinite ease;
 }
 
 nav .nav_container .nav_link_container {
-    height: 100%;
+  height: 100%;
 }
 
 nav .nav_container .nav_link_container .nav_links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  height: 100%;
 }
 
-
 nav .nav_container .nav_link_container .nav_links div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    transition: all 400ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 400ms ease;
 }
 
 nav .nav_container .nav_link_container .nav_links .active,
-nav .nav_container .nav_link_container .nav_links>div:hover {
-    border-radius: 0;
-    box-shadow: 2px 2px 1px blue, -2px -2px 1px red;
+nav .nav_container .nav_link_container .nav_links > div:hover {
+  border-radius: 0;
+  box-shadow: 2px 2px 1px #00aaff, -2px -2px 1px red;
 }
 
-nav .nav_container .nav_link_container .nav_links>div a {
-    text-decoration: none;
-    color: #000;
-    text-transform: capitalize;
-    width: 100%;
-    height: 100%;
+nav .nav_container .nav_link_container .nav_links > div a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  width: 100%;
+  height: 100%;
 }
 
 nav .action_container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 20px;
 }
 
 nav .action_container .mobile_menu,
 nav .action_container .notification {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 nav i {
-    background: linear-gradient(to right, red, blue);
-    background-clip: text;
-    color: transparent;
-    font-size: 20px
+  background: linear-gradient(to right, #00aaff, blue);
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
 }
 
 main {
-    background: #080;
-    height: 100%;
-
+  background: #00aaff;
+  height: 100%;
 }
 
 footer {
-    color: #008055;
+  color: #008055;
 }
 
+@keyframes shape {
+  0% {
+    border-radius: 30px 80px;
+  }
 
-@keyframes shape{
-    0%{
-        border-radius: 30px 80px;
-    }
+  50% {
+    border-radius: 10px 5px;
+  }
 
-    50%{
-        border-radius: 10px 5px;
-    }
-
-    100%{
-        border-radius: 20px 60px;
-    }
-
+  100% {
+    border-radius: 20px 60px;
+  }
 }
